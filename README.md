@@ -1,2 +1,3 @@
 # IoT-Course-M2M-assignment
-My final team assignment for my Internet of Things course from my 2021-2022 winter inter-semester at the Autonomous University of Baja California (December 2021 - January 2022): a small Mosquitto-based M2M network that consists of a laptop with a Python script, an Arduino Uno with an Ethernet Shield, a BeagleBone Black with a Python script, an ESP8266 (NodeMCU) and a mobile phone.
+My final team assignment for my Internet of Things course from my December 2021 - January 2022 inter-semester at the Autonomous University of Baja California: a small Mosquitto-based M2M network. This assignment was developed by a 2-person team composed of myself and my classmate [Leslie Vidal](https://github.com/LesliePVidal).
+
