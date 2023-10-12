@@ -10,7 +10,7 @@ My final team assignment for my Internet of Things course from my December 2021 
 - A mobile phone with the [MQTT Dash](https://play.google.com/store/apps/details?id=net.routix.mqttdash) app installed. Using the app, the mobile phone subscribes to the broker to receive the readings from all the aforementioned sensors (the KY-013, the KY-037 and both axes of the KY-023).
 
 ## My contributions
-I was in charge of designing and building the circuit for the BeagleBone Black and KY-013. The BeagleBone is powered by a Mini-B USB cable connected to a wall outlet and is connected to the internet through an Ethernet cable. The diagram I drew for the BeagleBone and KY-013 circuit can be seen below:  
+I was in charge of designing and building the circuit for the BeagleBone Black and the KY-013. The BeagleBone is powered by a Mini-B USB cable connected to a wall outlet and is connected to the internet through an Ethernet cable. The diagram I drew for the BeagleBone and KY-013 circuit can be seen below:  
 ![BeagleBone Black and KY-013 circuit diagram](https://github.com/mareyna356/IoT-Course-M2M-assignment/assets/116867368/8b300e2b-8f2b-47da-9f64-5a56318c4cea)
 
 The KY-013 is powered by the BeagleBone's 5V output from its SYS 5V pin (pin 7). The KY-013's signal pin is connected to the BeagleBone's AIN3 pin (pin 38) through a voltage divider that lowers the KY-013's maximum reading from 5V to 1.563V. The voltage divider, made up of a 1kΩ resistor and a 2.2kΩ resistor, is necessary to not damage the BeagleBone's analog pin, which can only take voltages of up to 1.8V. Finally, the KY-013's negative pin is connected to the BeagleBone's DGND pin (pin 1). The completed circuit can be seen below:  
@@ -35,5 +35,10 @@ An example of stored readings in the MySQL table can be seen below (NOTE: the re
 Finally, I was also responsible for using **MQTT Dash** on my phone to get the readings of the 4 sensors. In the app, I created 4 text nodes and subscribed each one to each of the network's 4 topics. The result can be seen below:  
 ![MQTT Dash on my phone](https://github.com/mareyna356/IoT-Course-M2M-assignment/assets/116867368/6a8db6d5-1041-4839-a7e5-3bd181687bf1)
 
-
 ## LesliePVidal's contributions
+LesliePVidal was responsible for designing and building the circuit for the Arduino Uno with Ethernet Shield, the ESP8266, the KY-037 and the KY-023. The Arduino is powered by a type B USB cable connected to a wall outlet. The ESP8266 is powered by a Micro USB cable connected to a wall outlet. The Arduino is connected to the internet through an Ethernet cable while the ESP8266 is connected to the internet wirelessly. The diagram for this circuit can be seen below:  
+![Circuito Arduino](https://github.com/mareyna356/IoT-Course-M2M-assignment/assets/116867368/8eb7e0ab-64bd-44ee-bb5c-22375bab4222)
+
+The KY-0 and
+
+The KY-013 is powered by the BeagleBone's 5V output from its SYS 5V pin (pin 7). The KY-013's signal pin is connected to the BeagleBone's AIN3 pin (pin 38) through a voltage divider that lowers the KY-013's maximum reading from 5V to 1.563V. The voltage divider, made up of a 1kΩ resistor and a 2.2kΩ resistor, is necessary to not damage the BeagleBone's analog pin, which can only take voltages of up to 1.8V. Finally, the KY-013's negative pin is connected to the BeagleBone's DGND pin (pin 1). The completed circuit can be seen below:  
